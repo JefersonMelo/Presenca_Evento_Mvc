@@ -136,7 +136,7 @@ legend
   margin-top:2px;
   width:225px;
 }
-#formulario input.btn_submit
+#formulario input.botao_cadastrar
 {
   position:absolute;
   bottom: 0.5em;

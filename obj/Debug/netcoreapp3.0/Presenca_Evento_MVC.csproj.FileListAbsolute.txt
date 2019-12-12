@@ -34,3 +34,4 @@ D:\Projetos\Layout\UC05\Presenca_Evento_MVC\obj\Debug\netcoreapp3.0\Presenca_Eve
 D:\Projetos\Layout\UC05\Presenca_Evento_MVC\obj\Debug\netcoreapp3.0\Razor\Views\Home\Cadastro.cshtml.g.cs
 D:\Projetos\Layout\UC05\Presenca_Evento_MVC\obj\Debug\netcoreapp3.0\Razor\Views\Home\ListagemConvidados.cshtml.g.cs
 D:\Projetos\Layout\UC05\Presenca_Evento_MVC\obj\Debug\netcoreapp3.0\Razor\Views\Home\Falha.cshtml.g.cs
+D:\Projetos\Layout\UC05\Presenca_Evento_Mvc\obj\Debug\netcoreapp3.0\Razor\Views\Home\Concluido.cshtml.g.cs

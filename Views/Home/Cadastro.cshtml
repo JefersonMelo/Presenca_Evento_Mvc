@@ -4,7 +4,7 @@
   <div id="area">
     <form id="formulario" method="POST">
       <fieldset>
-        <legend>Cadastrar-se Na Festa</legend><br>
+        <legend>Cadastre-se na Festa</legend><br>
         <!-- nome -->
         <p> 
             <label asp-for="Nome">Nome:</label>
@@ -23,11 +23,17 @@
         
         <!-- confirmar presença -->
             <p>
-                <label asp-for="ConfirmaPresenca">Confirmar:</label>
+                <label>Confirmar:</label>
                 <label class="campo_confirma" asp-for="ConfirmaPresenca">
-                Sim: @Html.RadioButton("ConfirmaPresenca","sim") 
-                Não: @Html.RadioButton("ConfirmaPresenca","nao")
-                </label><br>
+                Sim: <input type="radio" name="confirmaPresenca_Radio" id="sim" value="1">
+                <!-- @Html.RadioButton("ConfirmaPresenca","sim", true) --> 
+                <!-- https://pt.stackoverflow.com/questions/57342/como-usar-o-html-radiobutton-como-enviar-a-op%C3%A7%C3%A3o-seleciona-para-o-controller -->
+                <label class="campo_confirma" asp-for="ConfirmaPresenca">
+                Não: <input type="radio" name="confirmaPresenca_Radio" id="nao" value="2">
+                <!-- @Html.RadioButton("ConfirmaPresenca","nao", false) -->
+                </label>
+                </label>
+                <br>
             </p>
             <!-- botão cadastrar -->
             <p>

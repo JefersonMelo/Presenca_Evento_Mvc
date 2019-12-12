@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_MVC\\Presenca_Evento_MVC.csproj": {}
+    "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_Mvc\\Presenca_Evento_MVC.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_MVC\\Presenca_Evento_MVC.csproj": {
+    "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_Mvc\\Presenca_Evento_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_MVC\\Presenca_Evento_MVC.csproj",
+        "projectUniqueName": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_Mvc\\Presenca_Evento_MVC.csproj",
         "projectName": "Presenca_Evento_MVC",
-        "projectPath": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_MVC\\Presenca_Evento_MVC.csproj",
+        "projectPath": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_Mvc\\Presenca_Evento_MVC.csproj",
         "packagesPath": "C:\\Users\\jef_m\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_MVC\\obj\\",
+        "outputPath": "D:\\Projetos\\Layout\\UC05\\Presenca_Evento_Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jef_m\\AppData\\Roaming\\NuGet\\NuGet.Config",
