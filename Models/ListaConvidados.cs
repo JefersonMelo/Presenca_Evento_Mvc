@@ -14,9 +14,9 @@ namespace Presenca_Evento_MVC.Models
         */
 
         //confirma presença, radio buttom
-        public static bool Confirmacao(Convidado convidado, int confirmaPresenca_Radio)
+        public static bool Confirmacao(Convidado convidado)
         {
-            if (confirmaPresenca_Radio == 1)
+            if (convidado.ConfirmaPresenca == true)
             {
                 return convidado.ConfirmaPresenca = true;
             }
@@ -43,11 +43,7 @@ namespace Presenca_Evento_MVC.Models
         //incluir convidado na lista
         public static void Incluir(Convidado convidado)
         {
-            if (convidado.ConfirmaPresenca == true)
-            {
-                listaConvidados.Add(convidado);
-            }
-
+            listaConvidados.Add(convidado);
         }
         //retorna a lista
         public static List<Convidado> Listar()

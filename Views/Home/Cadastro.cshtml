@@ -1,4 +1,7 @@
 @model Convidado
+@{
+    ViewData["Title"] = "Cadastro ";
+}
 <html>
 <body>
   <div id="area">
@@ -7,29 +10,30 @@
         <legend>Cadastre-se na Festa</legend><br>
         <!-- nome -->
         <p> 
-            <label asp-for="Nome">Nome:</label>
+            <label>Nome:</label>
             <input class="campo_nome" asp-for="Nome"><br>
         </p>
         <!-- idade -->
         <p>
-            <label asp-for="Idade">Idade:</label>
+            <label>Idade:</label>
             <input class="campo_idade" asp-for="Idade"><br>
         </p>
         <!-- telefone -->
         <p>
-            <label asp-for="Telefone">Telefone:</label>
+            <label>Telefone:</label>
             <input class="campo_telefone" asp-for="Telefone"><br>
         </p>
         
         <!-- confirmar presença -->
+        <!-- https://pt.stackoverflow.com/questions/57342/como-usar-o-html-radiobutton-como-enviar-a-op%C3%A7%C3%A3o-seleciona-para-o-controller -->
             <p>
-                <label>Confirmar:</label>
-                <label class="campo_confirma" asp-for="ConfirmaPresenca">
-                Sim: <input type="radio" name="confirmaPresenca_Radio" id="sim" value="1">
-                <!-- @Html.RadioButton("ConfirmaPresenca","sim", true) --> 
-                <!-- https://pt.stackoverflow.com/questions/57342/como-usar-o-html-radiobutton-como-enviar-a-op%C3%A7%C3%A3o-seleciona-para-o-controller -->
-                <label class="campo_confirma" asp-for="ConfirmaPresenca">
-                Não: <input type="radio" name="confirmaPresenca_Radio" id="nao" value="2">
+                <label>Confirmar: </label>
+                <label class="campo_confirma">
+                &nbsp;&nbsp;&nbsp;&nbsp;Sim: <input type="radio" asp-for="ConfirmaPresenca" value="true">
+                <!-- @Html.RadioButton("ConfirmaPresenca","sim", true) -->
+                
+                <label class="campo_confirma">
+                Não: <input type="radio" asp-for="ConfirmaPresenca" value="false">
                 <!-- @Html.RadioButton("ConfirmaPresenca","nao", false) -->
                 </label>
                 </label>

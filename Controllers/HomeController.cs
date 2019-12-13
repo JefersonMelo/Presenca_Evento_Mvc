@@ -7,28 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Presenca_Evento_MVC.Models;
 
-/* 
-          Olá Jeferson, 
-          Parabéns pelo esforço e pela entrega, está  no caminho certo. 
-          O problema que me relata creio que tenha muito a ver com uma questão da
-          lógica e do que deve estar dentro ou fora do laço "foreach". Baixe aqui um 
-          vídeo que gravei para tentar explicar esse caso (usei 7zip para compactar).
-          Na verdade, eu penso até que pode usar a estrutura mais simples e elegante 
-          que adotou no projeto MVC: uma classe para o convidado, outra para a lista 
-          de convidado (até com um método que compara a repetição); no caso o Program.cs 
-          no projeto console é que usaria essas classes, mais ou menos como o homecontroller
-          usa no projeto mvc. O projeto MVC está bacana, estruturalmente correto. 
-          No entanto, novamente é a lógica que está levando a equívocos: o convidado não é cadastrado 
-          e isso por conta de laços "foreach" que não são necessários. Explico mais neste vídeo aqui, 
-          também compactado usando 7zip (clique aqui para baixar).
-          Veja com cuidado, faça as alterações e, se necessário, revise alguns dos últimos momentos online 
-          para alguns conteúdos. Qualquer dúvida ou problema me chama ali em Fale com o Tutor.
-          Abraço!
-          tutor Daltron
-
-       */
-
-
 namespace Presenca_Evento_MVC.Controllers
 {
     public class HomeController : Controller
@@ -48,21 +26,17 @@ namespace Presenca_Evento_MVC.Controllers
         public IActionResult Cadastro(Convidado convidado)
         {
             bool repetido = ListaConvidados.verificaUsuario(convidado);
-
             if (!repetido)
             {
                 ListaConvidados.Incluir(convidado);
                 return View("Concluido");
             }
-            else
-            {
-                return View("Falha");
-            }
+            return View("Falha");
         }
 
         public IActionResult Concluido()
         {
-            return View("Cadastro");
+            return View();
         }
         //listar convidado
         public IActionResult ListagemConvidados()

@@ -1,37 +1,27 @@
 @model List<Convidado>
-
+@{
+    ViewData["Title"] = "Lista ";
+}
 <h2> Lista dos Convidados Cadastrados </h2>
 <table>
    <thead>
        <tr>
-           <th>Nome  |  </th>
-           <th>Idade  |  </th>
-           <th>Telefone  |  </th>
-           <th>Confirmação</th>
+           <th>Nome &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Idade &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Telefone &nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;</th>
+           <th>Estará Na Festa</th>
        </tr>
    </thead>
    <tbody>
        @foreach(Convidado c in Model)
        {
        <tr>
-            <p>
-                <td>@c.Nome</td>
-            </p>
-            <br>
-            <p>
-                <td>@c.Idade</td>
-            </p>
-            <br>
-            <p>
-                <td>@c.Telefone</td>
-            </p>
-            <br>
-            <p>
-                <td>@c.ConfirmaPresenca</td>
-            </p>
-            <br>
+            <td>@c.Nome &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@c.Idade &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@c.Telefone &nbsp;&nbsp;&nbsp;&nbsp;</td><br>
+            <td>@c.ConfirmaPresenca</td><br>
        </tr>
        }
-       <a asp-action="Cadastro">Cadastrar Novo</a>
    </tbody>
-</table>
+</table>       
+<a asp-action="Cadastro">Cadastrar Novo</a>
